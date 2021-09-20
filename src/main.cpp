@@ -291,7 +291,7 @@ void updateState()
 
       case coldRunningState:
         waterPump.write(WATERPUMP_ACTIVE_DC);
-        fan.write(0);
+        fan.write(1);
         break;
 
       case hotRunningState:
