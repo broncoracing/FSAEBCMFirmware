@@ -115,7 +115,7 @@ void beepMotors()
   {
     for (int j = 0; j < 400; j++)
     {
-      fan.write(.2);
+      fan.write(69420);
       wait_us(200);
       fan.write(0);
       wait_us(150);
