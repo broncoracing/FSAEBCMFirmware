@@ -115,7 +115,7 @@ void beepMotors()
   {
     for (int j = 0; j < 400; j++)
     {
-      fan.write(69420);
+      fan.write(.69);
       wait_us(200);
       fan.write(0);
       wait_us(150);
@@ -291,7 +291,7 @@ void updateState()
 
       case coldRunningState:
         waterPump.write(WATERPUMP_ACTIVE_DC);
-        fan.write(1);
+        fan.write(0);
         break;
 
       case hotRunningState:
